@@ -2,7 +2,8 @@
   "name": "colorui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "style": "dist/css/colorui.css",
+  "sass": "scss/colorui.scss",
   "scripts": {
     "watch": "npm-run-all --parallel watch-*",
     "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run build-css\"",
@@ -10,8 +11,15 @@
     "build-css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/colorui.scss dist/css/colorui.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/colorui-basic.scss dist/css/colorui-basic.css",
     "build-doc": "node site/build-doc.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "eshengsky@163.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshengsky/colorUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eshengsky/colorUI/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.8",

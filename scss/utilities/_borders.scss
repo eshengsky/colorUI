@@ -10,6 +10,25 @@
 .border-bottom  { border-bottom: $border-width solid $border-color !important; }
 .border-left    { border-left: $border-width solid $border-color !important; }
 
+.border:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: $border-width solid $border-color;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+
+// 线条模拟边框
+.border-line {
+  border-image: url(data:image/gif;base64,R0lGODlhBQAFAPABANra2v///yH5BAUHAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+}
+
 .border-0        { border: 0 !important; }
 .border-top-0    { border-top: 0 !important; }
 .border-right-0  { border-right: 0 !important; }

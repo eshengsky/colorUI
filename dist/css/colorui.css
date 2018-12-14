@@ -316,6 +316,24 @@ mark,
   border-left: 1px solid #dee2e6 !important;
 }
 
+.border:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #dee2e6;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+
+.border-line {
+  border-image: url(data:image/gif;base64,R0lGODlhBQAFAPABANra2v///yH5BAUHAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+}
+
 .border-0 {
   border: 0 !important;
 }
