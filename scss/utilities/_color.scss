@@ -1,0 +1,45 @@
+// 字体颜色与背景色
+
+.color-white { color: $white !important; }
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".color-#{$color}", $value);
+}
+
+.color-body { color: $body-color !important; }
+.color-muted { color: $text-muted !important; }
+
+.color-black { color: $black !important; }
+
+.color-111 { color: #111 !important }
+.color-222 { color: #222 !important }
+.color-333 { color: #333 !important }
+.color-444 { color: #444 !important }
+.color-555 { color: #555 !important }
+.color-666 { color: #666 !important }
+.color-777 { color: #777 !important }
+.color-888 { color: #888 !important }
+.color-999 { color: #999 !important }
+
+// Reset
+
+.color-reset { color: inherit !important; }
+
+@each $color, $value in $theme-colors {
+    @include bg-variant(".bg-#{$color}", $value);
+  }
+  
+  @if $enable-gradients {
+    @each $color, $value in $theme-colors {
+      @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+    }
+  }
+  
+  .bg-white {
+    background-color: $white !important;
+  }
+  
+  .bg-transparent {
+    background-color: transparent !important;
+  }
+  

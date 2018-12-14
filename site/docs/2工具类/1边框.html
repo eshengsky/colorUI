@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\dist\css\colorui.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\site\doc.css">
+  <title>colorui文档</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div>TODO: Search</div>
+      <nav><div class="topic-item">
+    <a href="">内容</a>
+    <ul><li>
+            <a href="../1内容/1排版.html">排版</a>
+        </li><li>
+            <a href="../1内容/2样式重置.html">样式重置</a>
+        </li></ul></div><div class="topic-item">
+    <a href="">工具类</a>
+    <ul><li>
+            <a href="../2工具类/1Display.html">Display</a>
+        </li><li>
+            <a href="../2工具类/1定位.html">定位</a>
+        </li><li>
+            <a href="../2工具类/1宽高.html">宽高</a>
+        </li><li>
+            <a href="../2工具类/1文本.html">文本</a>
+        </li><li>
+            <a href="../2工具类/1浮动.html">浮动</a>
+        </li><li>
+            <a href="../2工具类/1边框.html">边框</a>
+        </li><li>
+            <a href="../2工具类/1间距.html">间距</a>
+        </li><li>
+            <a href="../2工具类/1阴影.html">阴影</a>
+        </li><li>
+            <a href="../2工具类/1颜色.html">颜色</a>
+        </li></ul></div></nav>
+    </aside>
+    <article class="content"><h1 id="边框">边框</h1>
+<p>使用边框工具类可以快速设置元素的边框以及圆角，你可以把它用在图片、按钮等各种元素上。</p>
+<h2 id="增加边框">增加边框</h2>
+<div class="demo">
+    <div class="d-flex">
+        <div class="border bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border-top bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border-right bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border-bottom bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border-left bg-light mr-10" style="width: 80px; height: 80px;"></div>
+    </div>
+</div>
+<pre><code class="html language-html">&lt;div class="border"&gt;&lt;/div&gt;
+&lt;div class="border-top"&gt;&lt;/div&gt;
+&lt;div class="border-right"&gt;&lt;/div&gt;
+&lt;div class="border-bottom"&gt;&lt;/div&gt;
+&lt;div class="border-left"&gt;&lt;/div&gt;
+</code></pre>
+<h2 id="移除边框">移除边框</h2>
+<div class="demo">
+    <div class="d-flex">
+        <div class="border-0 bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-top-0 bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-right-0 bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-bottom-0 bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-left-0 bg-light mr-10" style="width: 80px; height: 80px;"></div>
+    </div>
+</div>
+<pre><code class="html language-html">&lt;div class="border-0"&gt;&lt;/div&gt;
+&lt;div class="border border-top-0"&gt;&lt;/div&gt;
+&lt;div class="border border-right-0"&gt;&lt;/div&gt;
+&lt;div class="border border-bottom-0"&gt;&lt;/div&gt;
+&lt;div class="border border-left-0"&gt;&lt;/div&gt;
+</code></pre>
+<h2 id="边框颜色">边框颜色</h2>
+<div class="demo" style="background: #ddd;">
+    <div class="d-flex">
+        <div class="border border-deeppink bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-blue bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-orange bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-red bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-light bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-dark bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-white bg-light mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="border border-transparent bg-light mr-10" style="width: 80px; height: 80px;"></div>
+    </div>
+</div>
+<pre><code class="html language-html">&lt;div class="border border-deeppink"&gt;&lt;/div&gt;
+&lt;div class="border border-blue"&gt;&lt;/div&gt;
+&lt;div class="border border-orange"&gt;&lt;/div&gt;
+&lt;div class="border border-red"&gt;&lt;/div&gt;
+&lt;div class="border border-light"&gt;&lt;/div&gt;
+&lt;div class="border border-dark"&gt;&lt;/div&gt;
+&lt;div class="border border-white"&gt;&lt;/div&gt;
+&lt;div class="border border-transparent"&gt;&lt;/div&gt;
+</code></pre>
+<h2 id="圆角">圆角</h2>
+<div class="demo">
+    <div class="d-flex">
+        <div class="rounded bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-top-left bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-top-right bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-bottom-left bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-bottom-right bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-left bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-top bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-right bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-bottom bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-pill bg-red mr-10" style="width: 160px; height: 80px;"></div>
+        <div class="rounded-circle bg-red mr-10" style="width: 80px; height: 80px;"></div>
+        <div class="rounded-0 bg-red mr-10" style="width: 80px; height: 80px;"></div>
+    </div>
+</div>
+<pre><code class="html language-html">&lt;div class="rounded"&gt;&lt;/div&gt;
+&lt;div class="rounded-top-left"&gt;&lt;/div&gt;
+&lt;div class="rounded-top-right"&gt;&lt;/div&gt;
+&lt;div class="rounded-bottom-left"&gt;&lt;/div&gt;
+&lt;div class="rounded-bottom-right"&gt;&lt;/div&gt;
+&lt;div class="rounded-left"&gt;&lt;/div&gt;
+&lt;div class="rounded-top"&gt;&lt;/div&gt;
+&lt;div class="rounded-right"&gt;&lt;/div&gt;
+&lt;div class="rounded-bottom"&gt;&lt;/div&gt;
+&lt;div class="rounded-pill"&gt;&lt;/div&gt;
+&lt;div class="rounded-circle"&gt;&lt;/div&gt;
+&lt;div class="rounded-0"&gt;&lt;/div&gt;
+</code></pre></article>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="E:\Github\colorUI\site\doc.js"></script>
+</body>
+
+</html>

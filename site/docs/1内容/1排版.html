@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\dist\css\colorui.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\site\doc.css">
+  <title>colorui文档</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div>TODO: Search</div>
+      <nav><div class="topic-item">
+    <a href="">内容</a>
+    <ul><li>
+            <a href="../1内容/1排版.html">排版</a>
+        </li><li>
+            <a href="../1内容/2样式重置.html">样式重置</a>
+        </li></ul></div><div class="topic-item">
+    <a href="">工具类</a>
+    <ul><li>
+            <a href="../2工具类/1Display.html">Display</a>
+        </li><li>
+            <a href="../2工具类/1定位.html">定位</a>
+        </li><li>
+            <a href="../2工具类/1宽高.html">宽高</a>
+        </li><li>
+            <a href="../2工具类/1文本.html">文本</a>
+        </li><li>
+            <a href="../2工具类/1浮动.html">浮动</a>
+        </li><li>
+            <a href="../2工具类/1边框.html">边框</a>
+        </li><li>
+            <a href="../2工具类/1间距.html">间距</a>
+        </li><li>
+            <a href="../2工具类/1阴影.html">阴影</a>
+        </li><li>
+            <a href="../2工具类/1颜色.html">颜色</a>
+        </li></ul></div></nav>
+    </aside>
+    <article class="content"><h1 id="排版">排版</h1>
+<p>有关排版的文档和示例，包括全局设置，标题，正文，列表等。</p>
+<h2 id="全局设置">全局设置</h2>
+<p>colorui会设置基本的全局显示，排版和链接样式。
+当需要更多的样式控制时，请查看 [文本工具类]()。</p>
+<ul>
+<li>使用 <a href="aa">原生字体堆栈</a> 为每个操作系统和设备选择最佳的系列字体。</li>
+<li>设定默认字体大小为 <code>0.875rem</code>（主流浏览器会表现为 <code>14px</code>），支持用户修改浏览器的字号设置。</li>
+<li>使用 <code>$font-family-base</code>，<code>$font-size-base</code> 和 <code>$line-height-base</code> 属性作为应用于 <code>&lt;body&gt;</code> 的排版基础。</li>
+<li>通过 <code>$link-color</code> 设置全局链接颜色。</li>
+<li>使用 <code>$body-bg</code> 在 <code>&lt;body&gt;</code> 上设置背景颜色（默认情况下为 <code>#fff</code>）。</li>
+</ul>
+<p>这些样式可以在 <code>_basic.scss</code> 中找到，全局变量在 <code>_variables.scss</code> 中定义。</p>
+<h2 id="标题字体">标题字体</h2>
+<p>所有的HTML标题，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 都是可用的。所有字号都是基于 <code>rem</code>，默认情况下 <code>&lt;h5&gt;</code> 显示为 <code>14px</code>，你可以在 <code>&lt;html&gt;</code> 标签上设置 <code>font-size</code> 以调整大小。</p>
+<p><strong>注意：</strong> 浏览器默认的加粗样式被移除了。如果你确实想要字体加粗，可以使用 [文本工具类]() 中的 <code>.text-bold</code>。</p>
+<div class="demo">
+    <h1>h1: 24px</h1>
+    <h2>h2: 20px</h2>
+    <h3>h3: 18px</h3>
+    <h4>h4: 16px</h4>
+    <h5>h5: 14px</h5>
+    <h6>h6: 12px</h6>
+</div>
+<pre><code class="html language-html">&lt;h1&gt;h1: 24px&lt;/h1&gt;
+&lt;h2&gt;h2: 20px&lt;/h2&gt;
+&lt;h3&gt;h3: 18px&lt;/h3&gt;
+&lt;h4&gt;h4: 16px&lt;/h4&gt;
+&lt;h5&gt;h5: 14px&lt;/h5&gt;
+&lt;h6&gt;h6: 12px&lt;/h6&gt;
+</code></pre>
+<p><code>.h1</code> 到 <code>.h6</code> 的类也是可用的，你可以在 <code>&lt;p&gt;</code>, <code>&lt;span&gt;</code> 等元素上使用这些类。与 <code>&lt;h&gt;</code> 标签不同的是， <code>.h</code> 类移除了 <code>margin-bottom</code> 样式。</p>
+<div class="demo">
+    <span class="h1">.h1: 24px</span><br>
+    <span class="h2">.h2: 20px</span><br>
+    <span class="h3">.h3: 18px</span><br>
+    <span class="h4">.h4: 16px</span><br>
+    <span class="h5">.h5: 14px</span><br>
+    <span class="h6">.h6: 12px</span>
+</div>
+<pre><code class="html language-html">&lt;span class="h1"&gt;.h1: 24px&lt;/span&gt;&lt;br&gt;
+&lt;span class="h2"&gt;.h2: 20px&lt;/span&gt;&lt;br&gt;
+&lt;span class="h3"&gt;.h3: 18px&lt;/span&gt;&lt;br&gt;
+&lt;span class="h4"&gt;.h4: 16px&lt;/span&gt;&lt;br&gt;
+&lt;span class="h5"&gt;.h5: 14px&lt;/span&gt;&lt;br&gt;
+&lt;span class="h6"&gt;.h6: 12px&lt;/span&gt;
+</code></pre>
+<h2 id="辅助标题">辅助标题</h2>
+<p>你可以通过 <code>&lt;small&gt;</code> 标签或 <code>.small</code> 类创建一个放置于标题内的辅助标题，它的字体大小是父标题的 80%。</p>
+<div class="demo">
+    <h5>
+        三亚南山天涯5日跟团游
+        <small class="color-muted">纯玩0购物、24小时接机、吃货福利</small>
+    </h5>
+</div>
+<pre><code class="html language-html">&lt;h5&gt;
+    三亚南山天涯5日跟团游
+    &lt;small class="color-muted"&gt;纯玩0购物、24小时接机、吃货福利&lt;/small&gt;
+&lt;/h5&gt;
+</code></pre>
+<h2 id="内联文本元素">内联文本元素</h2>
+<p>用于普通内联HTML5元素的样式。</p>
+<div class="demo">
+    <p>与上海有关的搜索结果中<mark>关键字</mark>需要高亮。</p>
+    <p>现价90元，原价<del>100元。</del></p>
+    <p>现价90元，原价<s>100元。</s></p>
+    <p><u>这行文本会有一条下划线。</u></p>
+    <p><small>缩小后的字体，可用于标注说明等。</small></p>
+    <p><strong>这是加粗后的字体。</strong></p>
+    <p><em>这是倾斜后的字体。</em></p>
+</div>
+<pre><code class="html language-html">&lt;p&gt;与上海有关的搜索结果中&lt;mark&gt;关键字&lt;/mark&gt;需要高亮。&lt;/p&gt;
+&lt;p&gt;现价90元，原价&lt;del&gt;100元。&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;现价90元，原价&lt;s&gt;100元。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;这行文本会有一条下划线。&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;缩小后的字体，可用于标注说明等。&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这是加粗后的字体。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这是倾斜后的字体。&lt;/em&gt;&lt;/p&gt;
+</code></pre>
+<h2 id="文本工具类">文本工具类</h2>
+<p>使用 [文本工具类]() 和 [颜色工具类] 来更改文本的对齐、转换、样式、粗细和颜色等属性。</p>
+<h2 id="列表">列表</h2>
+<h3 id="无样式列表">无样式列表</h3>
+<p>给 <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code> 加上 <code>.list-unstyled</code> 会移除浏览器默认的列表样式。</p>
+<div class="demo">
+    <ul class="list-unstyled">
+        <li>综合排序</li>
+        <li>新品推荐</li>
+        <li>价格从低到高</li>
+        <li>价格从高到低</li>
+    </ul>
+</div>
+<pre><code class="html language-html">&lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;综合排序&lt;/li&gt;
+    &lt;li&gt;新品推荐&lt;/li&gt;
+    &lt;li&gt;价格从低到高&lt;/li&gt;
+    &lt;li&gt;价格从高到低&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="内联列表">内联列表</h3>
+<p>移除了列表的项目符号，并用两个类 <code>.list-inline</code> 和 <code>.list-inline-item</code> 的组合增加一点边距。</p>
+<div class="demo">
+    <ul class="list-inline">
+        <li class="list-inline-item">A排8号</li>
+        <li class="list-inline-item">D排11号</li>
+        <li class="list-inline-item">E排10号</li>
+    </ul>
+</div>
+<pre><code class="html language-html">&lt;ul class="list-inline"&gt;
+    &lt;li class="list-inline-item"&gt;A排8号&lt;/li&gt;
+    &lt;li class="list-inline-item"&gt;D排11号&lt;/li&gt;
+    &lt;li class="list-inline-item"&gt;E排10号&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></article>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="E:\Github\colorUI\site\doc.js"></script>
+</body>
+
+</html>

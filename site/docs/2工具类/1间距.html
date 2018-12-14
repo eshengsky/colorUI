@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\dist\css\colorui.css">
+  <link rel="stylesheet" href="E:\Github\colorUI\site\doc.css">
+  <title>colorui文档</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div>TODO: Search</div>
+      <nav><div class="topic-item">
+    <a href="">内容</a>
+    <ul><li>
+            <a href="../1内容/1排版.html">排版</a>
+        </li><li>
+            <a href="../1内容/2样式重置.html">样式重置</a>
+        </li></ul></div><div class="topic-item">
+    <a href="">工具类</a>
+    <ul><li>
+            <a href="../2工具类/1Display.html">Display</a>
+        </li><li>
+            <a href="../2工具类/1定位.html">定位</a>
+        </li><li>
+            <a href="../2工具类/1宽高.html">宽高</a>
+        </li><li>
+            <a href="../2工具类/1文本.html">文本</a>
+        </li><li>
+            <a href="../2工具类/1浮动.html">浮动</a>
+        </li><li>
+            <a href="../2工具类/1边框.html">边框</a>
+        </li><li>
+            <a href="../2工具类/1间距.html">间距</a>
+        </li><li>
+            <a href="../2工具类/1阴影.html">阴影</a>
+        </li><li>
+            <a href="../2工具类/1颜色.html">颜色</a>
+        </li></ul></div></nav>
+    </aside>
+    <article class="content"><h1 id="间距">间距</h1>
+<p>包括大量快速响应的margin和padding实用程序类，用于修改元素的外观布局。</p>
+<h2 id="类名组合">类名组合</h2>
+<p>类名称采用这样的格式：<code>{属性}{方向}-{值}</code>。</p>
+<p>其中 <code>{属性}</code> 包括：</p>
+<ul>
+<li><code>m</code> - 表示 <code>margin</code></li>
+<li><code>p</code> - 表示 <code>padding</code></li>
+</ul>
+<p>其中 <code>{方向}</code> 包括：</p>
+<ul>
+<li><code>t</code> - 表示 <code>margin-top</code> 或 <code>padding-top</code></li>
+<li><code>b</code> - 表示 <code>margin-bottom</code> 或 <code>padding-bottom</code></li>
+<li><code>l</code> - 表示 <code>margin-left</code> 或 <code>padding-left</code></li>
+<li><code>r</code> - 表示 <code>margin-right</code> 或 <code>padding-right</code></li>
+<li><code>x</code> - 表示 <code>*-left</code> 和 <code>*-right</code></li>
+<li><code>y</code> - 表示 <code>*-top</code> 和 <code>*-bottom</code></li>
+<li><code>留空</code> - 表示给元素的4个方向都设置 <code>margin</code> 或 <code>padding</code></li>
+</ul>
+<p>其中 <code>{值}</code> 包括：</p>
+<ul>
+<li><code>0</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>0</code></li>
+<li><code>1</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>1px</code></li>
+<li><code>2</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>2px</code></li>
+<li><code>3</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>3px</code></li>
+<li><code>4</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>4px</code></li>
+<li><code>5</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>5px</code></li>
+<li><code>8</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>8px</code></li>
+<li><code>10</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>10px</code></li>
+<li><code>15</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>15px</code></li>
+<li><code>20</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>20px</code></li>
+<li><code>auto</code> - 表示将 <code>margin</code> 或 <code>padding</code> 设为 <code>auto</code></li>
+</ul>
+<h2 id="示例">示例</h2>
+<pre><code class="css language-css">.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.px-2 {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+</code></pre>
+<h2 id="水平居中">水平居中</h2>
+<p>利用 <code>.mx-auto</code> 类可以将固定宽度的块级元素水平居中，原理是将水平边距设置为auto。</p>
+<div class="demo">
+    <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+        水平居中的块级元素
+    </div>
+</div>
+<pre><code class="html language-html">&lt;div class="mx-auto" style="width: 200px;"&gt;
+    水平居中的块级元素
+&lt;/div&gt;
+</code></pre></article>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="E:\Github\colorUI\site\doc.js"></script>
+</body>
+
+</html>

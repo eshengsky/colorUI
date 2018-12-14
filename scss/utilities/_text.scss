@@ -1,0 +1,44 @@
+// stylelint-disable declaration-no-important
+
+//
+// Text
+//
+
+
+// Alignment
+
+.text-wrap     { white-space: normal !important; }
+.text-nowrap   { white-space: nowrap !important; }
+.text-truncate { @include text-truncate; }
+
+// alignment
+
+.text-left   { text-align: left !important; }
+.text-right  { text-align: right !important; }
+.text-center { text-align: center !important; }
+
+// Transformation
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+// Misc
+  
+.text-decoration-none { text-decoration: none !important; }
+
+// Weight and italics
+
+.font-thin          { font-weight: $font-weight-light !important; }
+.font-normal        { font-weight: $font-weight-normal !important; }
+.font-bold          { font-weight: $font-weight-bold !important; }
+.font-italic        { font-style: italic !important; }
+
+// 字母间距
+
+.letter-space-0 { letter-spacing: 0 }
+.letter-space-1 { letter-spacing: 1px }
+.letter-space-2 { letter-spacing: 2px }
+.letter-space-3 { letter-spacing: 3px }
+.letter-space-4 { letter-spacing: 4px }
+.letter-space-5 { letter-spacing: 5px }
