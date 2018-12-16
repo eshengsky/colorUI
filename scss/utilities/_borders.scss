@@ -10,33 +10,38 @@
 .border-bottom  { border-bottom: $border-width solid $border-color !important; }
 .border-left    { border-left: $border-width solid $border-color !important; }
 
-.border:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  border: $border-width solid $border-color;
-  width: 200%;
-  height: 200%;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  -webkit-transform: scale(0.5);
-  -webkit-transform-origin: 0 0;
+// 将边框转变成高清边框
+.retina {
+  position: relative !important;
+  border: 0 !important;
 }
 
-// 线条模拟边框
-.border-line {
-  border-image: url(data:image/gif;base64,R0lGODlhBQAFAPABANra2v///yH5BAUHAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+.retina:before {
+  content: " " !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  border-width: 0;
+  border-color: $border-color;
+  border-style: solid;
+  width: 200% !important;
+  height: 200% !important;
+  transform-origin: 0 0 !important;
+  transform: scale(0.5) !important;
 }
 
-.border-0        { border: 0 !important; }
-.border-top-0    { border-top: 0 !important; }
-.border-right-0  { border-right: 0 !important; }
-.border-bottom-0 { border-bottom: 0 !important; }
-.border-left-0   { border-left: 0 !important; }
+.border.retina:before { border-width: $border-width !important }
+.border-left.retina:before { border-left-width: $border-width !important }
+.border-top.retina:before { border-top-width: $border-width !important }
+.border-right.retina:before { border-right-width: $border-width !important }
+.border-bottom.retina:before { border-bottom-width: $border-width !important }
 
 @each $color, $value in $theme-colors {
   .border-#{$color} {
+    border-color: $value !important;
+  }
+
+  .border-#{$color}.retina:before {
     border-color: $value !important;
   }
 }
@@ -45,7 +50,15 @@
   border-color: $white !important;
 }
 
+.border-white.retina:before {
+  border-color: $white !important;
+}
+
 .border-transparent {
+  border-color: transparent !important;
+}
+
+.border-transparent.retina:before {
   border-color: transparent !important;
 }
 
@@ -56,43 +69,82 @@
 .rounded {
   border-radius: $border-radius !important;
 }
+.rounded.retina:before {
+  border-radius: $border-radius * 2 !important;
+}
 .rounded-top-left {
   border-top-left-radius: $border-radius !important;
+}
+.rounded-top-left.retina:before {
+  border-top-left-radius: $border-radius * 2 !important;
 }
 .rounded-top-right {
   border-top-right-radius: $border-radius !important;
 }
+.rounded-top-right.retina:before {
+  border-top-right-radius: $border-radius * 2 !important;
+}
 .rounded-bottom-left {
   border-bottom-left-radius: $border-radius !important;
 }
+.rounded-bottom-left.retina:before {
+  border-bottom-left-radius: $border-radius * 2 !important;
+}
 .rounded-bottom-right {
   border-bottom-right-radius: $border-radius !important;
+}
+.rounded-bottom-right.retina:before {
+  border-bottom-right-radius: $border-radius * 2 !important;
 }
 .rounded-top {
   border-top-left-radius: $border-radius !important;
   border-top-right-radius: $border-radius !important;
 }
+.rounded-top.retina:before {
+  border-top-left-radius: $border-radius * 2 !important;
+  border-top-right-radius: $border-radius * 2 !important;
+}
 .rounded-right {
   border-top-right-radius: $border-radius !important;
   border-bottom-right-radius: $border-radius !important;
+}
+.rounded-right.retina:before {
+  border-top-right-radius: $border-radius * 2 !important;
+  border-bottom-right-radius: $border-radius * 2 !important;
 }
 .rounded-bottom {
   border-bottom-right-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
+.rounded-bottom.retina:before {
+  border-bottom-right-radius: $border-radius * 2 !important;
+  border-bottom-left-radius: $border-radius *2 !important;
+}
 .rounded-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
+}
+.rounded-left.retina:before {
+  border-top-left-radius: $border-radius * 2 !important;
+  border-bottom-left-radius: $border-radius * 2 !important;
 }
 
 .rounded-circle {
   border-radius: 50% !important;
 }
-
+.rounded-circle.retina::before {
+  border-radius: 50% !important;
+}
 .rounded-pill {
   border-radius: $rounded-pill !important;
 }
+.rounded-pill.retina::before {
+  border-radius: $rounded-pill * 2 !important;
+}
 
 .rounded-0 {
+  border-radius: 0 !important;
+}
+.rounded-0.retina::before {
   border-radius: 0 !important;
 }

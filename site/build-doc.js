@@ -11,7 +11,7 @@ showdown.extension('headerlink', () => {
     }];
 });
 const converter = new showdown.Converter({
-    // extensions: ['headerlink'],
+    extensions: ['headerlink'],
     ghCompatibleHeaderId: true
 });
 

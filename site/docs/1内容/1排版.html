@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
-  <link rel="stylesheet" href="E:\Github\colorUI\dist\css\colorui.css">
-  <link rel="stylesheet" href="E:\Github\colorUI\site\doc.css">
+  <link rel="stylesheet" href="/dist/css/colorui.css">
+  <link rel="stylesheet" href="/site/doc.css">
   <title>colorui文档</title>
 </head>
 
@@ -42,9 +42,9 @@
             <a href="../2工具类/1颜色.html">颜色</a>
         </li></ul></div></nav>
     </aside>
-    <article class="content"><h1 id="排版">排版</h1>
+    <article class="content"><h1 id="排版">排版 <a href="#排版"><i class="iconfont icon-pin"></i></a></h1>
 <p>有关排版的文档和示例，包括全局设置，标题，正文，列表等。</p>
-<h2 id="全局设置">全局设置</h2>
+<h2 id="全局设置">全局设置 <a href="#全局设置"><i class="iconfont icon-pin"></i></a></h2>
 <p>colorui会设置基本的全局显示，排版和链接样式。
 当需要更多的样式控制时，请查看 [文本工具类]()。</p>
 <ul>
@@ -55,7 +55,7 @@
 <li>使用 <code>$body-bg</code> 在 <code>&lt;body&gt;</code> 上设置背景颜色（默认情况下为 <code>#fff</code>）。</li>
 </ul>
 <p>这些样式可以在 <code>_basic.scss</code> 中找到，全局变量在 <code>_variables.scss</code> 中定义。</p>
-<h2 id="标题字体">标题字体</h2>
+<h2 id="标题字体">标题字体 <a href="#标题字体"><i class="iconfont icon-pin"></i></a></h2>
 <p>所有的HTML标题，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 都是可用的。所有字号都是基于 <code>rem</code>，默认情况下 <code>&lt;h5&gt;</code> 显示为 <code>14px</code>，你可以在 <code>&lt;html&gt;</code> 标签上设置 <code>font-size</code> 以调整大小。</p>
 <p><strong>注意：</strong> 浏览器默认的加粗样式被移除了。如果你确实想要字体加粗，可以使用 [文本工具类]() 中的 <code>.text-bold</code>。</p>
 <div class="demo">
@@ -89,7 +89,7 @@
 &lt;span class="h5"&gt;.h5: 14px&lt;/span&gt;&lt;br&gt;
 &lt;span class="h6"&gt;.h6: 12px&lt;/span&gt;
 </code></pre>
-<h2 id="辅助标题">辅助标题</h2>
+<h2 id="辅助标题">辅助标题 <a href="#辅助标题"><i class="iconfont icon-pin"></i></a></h2>
 <p>你可以通过 <code>&lt;small&gt;</code> 标签或 <code>.small</code> 类创建一个放置于标题内的辅助标题，它的字体大小是父标题的 80%。</p>
 <div class="demo">
     <h5>
@@ -102,7 +102,7 @@
     &lt;small class="color-muted"&gt;纯玩0购物、24小时接机、吃货福利&lt;/small&gt;
 &lt;/h5&gt;
 </code></pre>
-<h2 id="内联文本元素">内联文本元素</h2>
+<h2 id="内联文本元素">内联文本元素 <a href="#内联文本元素"><i class="iconfont icon-pin"></i></a></h2>
 <p>用于普通内联HTML5元素的样式。</p>
 <div class="demo">
     <p>与上海有关的搜索结果中<mark>关键字</mark>需要高亮。</p>
@@ -121,10 +121,10 @@
 &lt;p&gt;&lt;strong&gt;这是加粗后的字体。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;这是倾斜后的字体。&lt;/em&gt;&lt;/p&gt;
 </code></pre>
-<h2 id="文本工具类">文本工具类</h2>
+<h2 id="文本工具类">文本工具类 <a href="#文本工具类"><i class="iconfont icon-pin"></i></a></h2>
 <p>使用 [文本工具类]() 和 [颜色工具类] 来更改文本的对齐、转换、样式、粗细和颜色等属性。</p>
-<h2 id="列表">列表</h2>
-<h3 id="无样式列表">无样式列表</h3>
+<h2 id="列表">列表 <a href="#列表"><i class="iconfont icon-pin"></i></a></h2>
+<h3 id="无样式列表">无样式列表 <a href="#无样式列表"><i class="iconfont icon-pin"></i></a></h3>
 <p>给 <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code> 加上 <code>.list-unstyled</code> 会移除浏览器默认的列表样式。</p>
 <div class="demo">
     <ul class="list-unstyled">
@@ -141,7 +141,7 @@
     &lt;li&gt;价格从高到低&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-<h3 id="内联列表">内联列表</h3>
+<h3 id="内联列表">内联列表 <a href="#内联列表"><i class="iconfont icon-pin"></i></a></h3>
 <p>移除了列表的项目符号，并用两个类 <code>.list-inline</code> 和 <code>.list-inline-item</code> 的组合增加一点边距。</p>
 <div class="demo">
     <ul class="list-inline">
@@ -155,10 +155,27 @@
     &lt;li class="list-inline-item"&gt;D排11号&lt;/li&gt;
     &lt;li class="list-inline-item"&gt;E排10号&lt;/li&gt;
 &lt;/ul&gt;
+</code></pre>
+<h3 id="列表元素点击效果">列表元素点击效果 <a href="#列表元素点击效果"><i class="iconfont icon-pin"></i></a></h3>
+<p>给列表添加 <code>.list-touch-bg</code> 类可以在点击列表项时有一个背景色改变。</p>
+<div class="demo">
+    <ul class="list-unstyled list-touch-bg">
+        <li>综合排序</li>
+        <li>新品推荐</li>
+        <li>价格从低到高</li>
+        <li>价格从高到低</li>
+    </ul>
+</div>
+<pre><code class="html language-html">&lt;ul class="list-unstyled list-touch-bg"&gt;
+    &lt;li&gt;综合排序&lt;/li&gt;
+    &lt;li&gt;新品推荐&lt;/li&gt;
+    &lt;li&gt;价格从低到高&lt;/li&gt;
+    &lt;li&gt;价格从高到低&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre></article>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-  <script src="E:\Github\colorUI\site\doc.js"></script>
+  <script src="/site/doc.js"></script>
 </body>
 
 </html>

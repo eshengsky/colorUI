@@ -28,13 +28,13 @@
 ```
 
 <div class="demo">
-    <span class="d-block p-5 bg-red color-white">d-inline</span>
-    <span class="d-block p-5 bg-blue color-white">d-inline</span>
+    <span class="d-block p-5 bg-red color-white">d-block</span>
+    <span class="d-block p-5 bg-blue color-white">d-block</span>
 </div>
 
 ```html
-<span class="d-block">d-inline</span>
-<span class="d-block">d-inline</span>
+<span class="d-block">d-block</span>
+<span class="d-block">d-block</span>
 ```
 
 <div class="demo">

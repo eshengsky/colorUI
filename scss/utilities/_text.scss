@@ -9,13 +9,17 @@
 
 .text-wrap     { white-space: normal !important; }
 .text-nowrap   { white-space: nowrap !important; }
-.text-truncate { @include text-truncate; }
 
 // alignment
 
 .text-left   { text-align: left !important; }
 .text-right  { text-align: right !important; }
 .text-center { text-align: center !important; }
+
+// 文本截断
+.text-truncate { @include text-truncate; }
+.text-truncate-2 { @include text-truncate-2; }
+.text-truncate-3 { @include text-truncate-3; }
 
 // Transformation
 

@@ -1,5 +1,5 @@
 .container {
-    display: flex;
+    /* display: flex; */
     flex-wrap: nowrap;
 }
 
@@ -14,12 +14,8 @@ aside {
     height: 100vh;
 }
 
-.aaa {
-    float: none;
-}
-
 code {
-    color: #d30775;
+    color: #d14;
     word-break: break-word;
 }
 

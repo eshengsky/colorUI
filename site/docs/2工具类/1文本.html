@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
-  <link rel="stylesheet" href="E:\Github\colorUI\dist\css\colorui.css">
-  <link rel="stylesheet" href="E:\Github\colorUI\site\doc.css">
+  <link rel="stylesheet" href="/dist/css/colorui.css">
+  <link rel="stylesheet" href="/site/doc.css">
   <title>colorui文档</title>
 </head>
 
@@ -42,9 +42,9 @@
             <a href="../2工具类/1颜色.html">颜色</a>
         </li></ul></div></nav>
     </aside>
-    <article class="content"><h1 id="文本">文本</h1>
-<p>文本工具类，快速配置文本的对齐、变换、粗细等。</p>
-<h2 id="对齐方式">对齐方式</h2>
+    <article class="content"><h1 id="文本">文本 <a href="#文本"><i class="iconfont icon-pin"></i></a></h1>
+<p>文本工具类，快速配置文本的对齐、截断、变换、粗细等。</p>
+<h2 id="对齐方式">对齐方式 <a href="#对齐方式"><i class="iconfont icon-pin"></i></a></h2>
 <div class="demo">
     <p class="text-left">左对齐文本</p>
     <p class="text-center">居中对齐文本</p>
@@ -54,7 +54,32 @@
 &lt;p class="text-center"&gt;居中对齐文本&lt;/p&gt;
 &lt;p class="text-right"&gt;右对齐文本&lt;/p&gt;
 </code></pre>
-<h2 id="文本变换">文本变换</h2>
+<h2 id="文本截断">文本截断 <a href="#文本截断"><i class="iconfont icon-pin"></i></a></h2>
+<ul>
+<li><code>text-truncate</code> - 单行文本截断</li>
+</ul>
+<div class="demo">
+    <p class="text-truncate" style="max-width: 250px;">这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本</p>
+</div>
+<pre><code class="html language-html">&lt;p class="text-truncate" style="max-width: 250px;"&gt;这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本&lt;/p&gt;
+</code></pre>
+<ul>
+<li><code>text-truncate-2</code> - 2行文本截断</li>
+</ul>
+<div class="demo">
+    <p class="text-truncate-2" style="max-width: 250px;">这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本</p>
+</div>
+<pre><code class="html language-html">&lt;p class="text-truncate-2" style="max-width: 250px;"&gt;这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本&lt;/p&gt;
+</code></pre>
+<ul>
+<li><code>text-truncate-3</code> - 3行文本截断</li>
+</ul>
+<div class="demo">
+    <p class="text-truncate-3" style="max-width: 250px;">这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本</p>
+</div>
+<pre><code class="html language-html">&lt;p class="text-truncate-3" style="max-width: 250px;"&gt;这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本&lt;/p&gt;
+</code></pre>
+<h2 id="文本变换">文本变换 <a href="#文本变换"><i class="iconfont icon-pin"></i></a></h2>
 <div class="demo">
     <p class="text-lowercase">Lowercased 转为小写</p>
     <p class="text-uppercase">Uppercased 转为大写</p>
@@ -64,7 +89,7 @@
 &lt;p class="text-uppercase"&gt;Uppercased 转为大写&lt;/p&gt;
 &lt;p class="text-capitalize"&gt;capiTaliZed 转为首字母大写&lt;/p&gt;
 </code></pre>
-<h2 id="字体形态">字体形态</h2>
+<h2 id="字体形态">字体形态 <a href="#字体形态"><i class="iconfont icon-pin"></i></a></h2>
 <div class="demo">
     <p class="font-bold">字体加粗</p>
     <p class="font-normal">普通粗细字体</p>
@@ -76,8 +101,8 @@
 &lt;p class="font-thin"&gt;字体变细&lt;/p&gt;
 &lt;p class="font-italic"&gt;字体倾斜&lt;/p&gt;
 </code></pre>
-<h2 id="字符间距">字符间距</h2>
-<p>通过 <code>letter-space-*</code> 可以给字符增加一点间距，使文本没那么紧凑，很多时候看上去会更美观。</p>
+<h2 id="字符间距">字符间距 <a href="#字符间距"><i class="iconfont icon-pin"></i></a></h2>
+<p>通过 <code>letter-space-*</code> 可以给字符增加一点间距，使文本没那么紧凑，可以尝试用于标题、按钮等地方。</p>
 <div class="demo">
     <p class="letter-space-0">字符没有间距的默认文本</p>
     <p class="letter-space-1">字符间距1px的文本</p>
@@ -95,7 +120,7 @@
 </code></pre></article>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-  <script src="E:\Github\colorUI\site\doc.js"></script>
+  <script src="/site/doc.js"></script>
 </body>
 
 </html>
